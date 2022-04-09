@@ -7,6 +7,8 @@ import {
   NavBtn,
   NavBtnLink,
 } from './NavbarElements';
+import styled from 'styled-components';
+
   
 const Navbar = () => {
   return (
@@ -15,12 +17,15 @@ const Navbar = () => {
         <Bars />
   
         <NavMenu>
-          <NavLink to='/about' activeStyle>
+          <NavLink to='/about' >
             About
           </NavLink>
-          <NavLink to='/' activeStyle>
+          <NavLink to='/' >
             Events
             </NavLink>
+          <NavLink to='/log' >
+            Log
+          </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
         </NavMenu>
